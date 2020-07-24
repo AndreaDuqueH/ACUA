@@ -1,0 +1,137 @@
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+
+/*Header styles*/
+
+#headerContainer {
+    width: auto;
+    height: 50px;
+    background-color: #f6f1eb;
+    padding: 10px;
+}
+
+#country {
+    position: relative;
+    float: left;
+    width: 6%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: #707070;
+  }
+
+  #pin {
+    position: relative;
+    float: left;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  #language {
+    position: relative;
+    float: left;
+    width: 6%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: #707070;
+  }
+
+  #deliveryPromo {
+    position: relative;
+    float: left;
+    width: 40%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: #0cbdd2;
+  }
+/*Begining Browser*/
+  #browser {
+    position: relative;
+    float: left;
+    width: 20%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: #707070;
+  }
+
+  .searchBar {
+      border-color: #b3b0ad;
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 5px;
+      height: 30px;
+      background-color: #fbf8f5;
+      padding: 5px;
+  }
+
+  .searchControl {
+    position: relative;
+    float: left;
+    width: 90%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    flex-direction: column;
+    background-color: #fbf8f5;
+    color: #707070;
+    border-width: 0px;
+    opacity: 60%;
+  }
+
+  .searchButton {
+    position: absolute;
+    margin-left: 85%;
+    width: 10%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #fbf8f5;
+    color: #707070;
+    border-width: 0px;
+    padding: 0px 0px 0px 0px;
+  }
+
+/*Ending Browser*/
+
+  #ownAccount {
+    position: relative;
+    float: left;
+    width: 15%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    text-align: right;
+    flex-direction: column;
+    color: #707070;
+  }
+
+  #store {
+    position: relative;
+    float: left;
+    width: 5%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: #707070;
+  }
+
