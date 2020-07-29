@@ -1,5 +1,42 @@
-let slider = document.querySelector(".sliderContenedor");
-let sliderIndividual = document.querySelectorAll(".contenidoSlider");
+/*Slider*/
+
+/*
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+  }
+  
+*/
+
+
+
+
+
+
+let slider = document.querySelector(".sliderContainer");
+let sliderIndividual = document.querySelectorAll(".background");
 let contador = 1;
 let width = sliderIndividual[0].clientWidth;
 let intervalo = 4000;
@@ -25,3 +62,4 @@ function slides () {
         },1500)
     }
 }
+
