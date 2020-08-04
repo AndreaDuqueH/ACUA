@@ -4,15 +4,15 @@ body {
 
 /*Header styles*/
 
-#headerContainer {
+  #headerContainer {
     width: auto;
-    height: 50px;
+    height: 45px;
     background-color: #f6f1eb;
     padding: 10px;
     font-size: 14px;
-}
+  }
 
-#country {
+  #country {
     position: relative;
     float: left;
     width: 6%;
@@ -49,6 +49,14 @@ body {
     border-left: #70707036 solid 1px;
   }
 
+  #language select{
+    border: none;
+    background-color: #f6f1eb;
+    color: #707070;
+    
+
+  }
+
   #deliveryPromo {
     position: relative;
     float: left;
@@ -60,7 +68,7 @@ body {
     flex-direction: column;
     color: #0cbdd2;
   }
-/*Begining Search*/
+  /*Begining Search*/
   #browser {
     position: relative;
     float: left;
@@ -113,7 +121,7 @@ body {
     padding: 0px 0px 0px 0px;
   }
 
-/*Ending Search*/
+  /*Ending Search*/
 
   #ownAccount {
     position: relative;
@@ -126,6 +134,11 @@ body {
     flex-direction: column;
     color: #707070;
     padding-right: 10px;
+  }
+
+  #ownAccount a {
+    text-decoration: none;
+    color: #707070;
   }
 
   #store {
@@ -143,6 +156,11 @@ body {
     border-left: #70707036 solid 1px;
   }
 
+  #store a {
+    text-decoration: none;
+    color: #707070;
+  }
+
   #bag {
     position: relative;
     float: left;
@@ -153,7 +171,8 @@ body {
     flex-direction: column;
     margin-bottom: 5px;
   }
-  
+/*Finish Header's Styles*/
+
 /*Menu Styles*/
 
   #mainMenu {
@@ -237,11 +256,9 @@ body {
     flex-direction: column;
    }
 
-  /*Finish Menu Styles*/
+/*Finish Menu Styles*/
 
-  /*Index's Styles*/
-
-   
+/*                                 Index's Content Styles                                          */
 
   #indexContent {
     position: relative;
@@ -313,7 +330,7 @@ body {
 
   /* Next & previous buttons */
 
-.prev, .next {
+  .prev, .next {
   cursor: progress;
   position: absolute;
   top: 50%;
@@ -325,34 +342,34 @@ body {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-}
+  }
 
 
-/* Position the "next button"*/
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
+  /* Position the "next button"*/
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
 
-/* On hover, add a gray background color*/
-.prev:hover, .next:hover {
-  background-color: #bbb;
-}
+  /* On hover, add a gray background color*/
+  .prev:hover, .next:hover {
+     background-color: #bbb;
+  }
 
-/* Controls */
-.lowerControl {
-  cursor: pointer;
+  /* Controls */
+  .lowerControl {
+    cursor: pointer;
   height: 3px;
   width: 70px;
   margin: 0 2px;
   background-color: #0cbdd2;
   display: inline-block;
   transition: background-color 0.6s ease;
-}
+  }
 
-.active, .lowerControl:hover {
+  .active, .lowerControl:hover {
   height: 7px;;
-}
+  }
   /*Finish index´s slider styles*/
 
   /*index´s sections styles*/
@@ -389,6 +406,7 @@ body {
     font-size: 20px;
     font-weight: bold;
   }
+/*                                           Finish Index's Styles                            */
 
   /*Footer's Styles*/
 
@@ -420,3 +438,124 @@ body {
     flex-direction: column;
     font-size: 11px;
   }
+
+  #documents a {
+    text-decoration: none;
+    color: #707070;
+    text-align: left;
+    font-weight: bold;
+  }
+
+/*                            Boutique's Styles                             */
+
+/*Map Styles*/
+
+#mainContent {
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  flex-direction: row;
+}
+
+
+#map {
+  float: left;
+  height: 700px;
+  width: 70%;
+  border-radius: 5px;
+}
+
+
+#boutiques {
+  width: 30%;
+  height: auto;
+  display: flex;
+  text-align: left;
+  justify-content: top;
+  flex-direction: column;
+  float: left;
+  border: #70707036 solid 1px;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+.item {
+  padding: 10px;
+  border-bottom: #70707036 solid 1px;
+  height: 10%;
+  width: auto;
+}
+
+.item a {
+  text-decoration: none;
+  color: #707070;
+  text-align: left;
+  font-weight: bold;
+}
+
+.item p {
+  font-size: 14px;
+  margin: 5px;
+}
+
+/*                           Finish Boutique's Styles                             */
+
+/*                           Login and Registry Styles                            */
+
+#containerLoginAndRegistry {
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  flex-direction: row;
+  float: left;
+  width: auto;
+  height: 700px;
+  padding: 10px;
+}
+
+#login {
+  float: left;
+  width: 50%;
+  height: 750px;
+  border-bottom: #70707036 solid 1px;
+}
+
+#registry {
+  float: left;
+  width: 50%;
+  height: 750px;
+  border-bottom: #70707036 solid 1px;
+}
+
+.title {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 19px;
+  margin-bottom: 20px;
+}
+
+.form {
+  padding: 20px 50px;
+}
+
+.form input {
+  width: 96%;
+  height: 20px;
+  border-color: #70707036;
+  
+}
+
+.form button {
+  margin-top: 10px; 
+  background-color: #0cbed2; 
+  height: 30px; 
+  width: 150px; 
+  border-radius: 5px;
+  border: black  1px;
+  font-weight: bold;
+  color: #585757;
+}

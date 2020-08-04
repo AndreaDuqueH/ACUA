@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acua Colombia</title>
+    <link rel="stylesheet" href="Assents/css/acuaStyle.css">
+    <link rel="stylesheet" href="Assents/css/resetDocument.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!--- Begining of Header-->
+    <div id="headerContainer">
+        <div id="pin"><img src="Assents/img/location-pin.svg" alt="locationPin"></div>
+        <div id="country">Colombia</div>
+        <div id="language">
+            <Select>
+                <option value="Español" selected="selected">Español</option>
+            </Select>
+        </div>
+        <div id="pin"><img src="Assents/img/down-arrow.svg" alt="selectLanguage"></div>
+        <div id="deliveryPromo"><b>Envios gratuitos por compras superiores a USD $30</b></div>
+        <div id="browser">
+            <form class="searchBar">
+                <input class="searchControl" type="search" placeholder="Buscar en acuacompany.com" aria-label="Search">
+                <button class="searchButton" type="submit"><img src="Assents/img/search.svg" alt="loupe"></button>
+            </form>
+        </div>
+        <div id="ownAccount"><a href="registroYLogin.html">Ingresar/Registrarse</a> </div>
+        <div id="store"><a href="">Bolsa</a> </div>
+        <div id="bag"><a href=""> <img src="Assents/img/bag.svg" alt="bagStore"></a> </div>
+    </div>
+    <!--Finish of header-->
+
+    <!--Begining of Menu-->
+
+    <div id="mainMenu">
+
+        <div class="logo"><a href="index.html"><img src="Assents/img/Logo Acua fondo Transparente.png" alt="logo"></a>
+        </div>
+
+        <div class="linksMenu">
+            <div class="blockTextMenu">
+                <a href="">MUJERES</a> <br>
+            </div>
+            <div class="blockTextMenu">
+                <a href="">HOMBRES</a> <br>
+            </div>
+            <div class="blockTextMenu">
+                <a href="">ACCESORIOS</a> <br>
+            </div>
+            <div class="blockTextMenu boutique">
+                <a href="boutiques.html">BOUTIQUES</a> <br>
+            </div>
+        </div>
+
+        <div class="socialMedia">
+            <div class="socialLogo"> <a href="http://www.facebook.com" target="_blank"><img
+                        src="Assents/img/facebook-circular-logo.svg" alt="facebook"></a></div>
+            <div class="socialLogo"><a href="http://twitter.com" target="_blank"><img src="Assents/img/twitter.svg"
+                        alt="twitter"></a></div>
+            <div class="socialLogo"> <a href="http://instagram.com" target="_blank"><img src="Assents/img/instagram.svg"
+                        alt="instagram"></a></div>
+        </div>
+    </div>
+    <!--Finish of Menu-->
+
+    <!--Begining of index's content-->
+    <div id="indexContent">
+        <div id="containerLoginAndRegistry">
+            <div id="login">
+                <div class="title">
+                    <div class="separadorH">
+                        <hr>
+                    </div>
+                    <div id="textHeaderIndex">
+                        <p>Ingresar</p>
+                    </div>
+                    <div class="separadorH">
+                        <hr>
+                    </div>
+                </div>
+                <div class="form">
+                    <p style="font-size: 12px;">Ingresa tu email y contraseña para identificarte.</p>
+                    <br>
+                    <div>Correo</div>
+                    <br>
+                    <input type="email" id="mail">
+                    <div id="wrongMail" style="color: crimson; font-size: 10px;"></div>
+                    <br>
+                    <div>Contraseña</div>
+                    <br>
+                    <input type="password" class="password">
+                    <div id="wrongPassword" style="color: crimson; font-size: 10px;"></div>
+                    <br>
+                    <a href="#" style="font-size: 10px;">Olvide mi contraseña</a>
+                    <br>
+                    <button onclick="obtenerValor()" >Iniciar Sesion</button>
+
+
+
+                </div>
+            </div>
+            <div id="registry">
+                <div class="title">
+                    <div class="separadorH">
+                        <hr>
+                    </div>
+                    <div id="textHeaderIndex">
+                        <p>Registro</p>
+                    </div>
+                    <div class="separadorH">
+                        <hr>
+                    </div>
+                </div>
+                <div class="form">
+                    <div style="padding: 10px">
+                        <p style="font-size: 12px;">Registrate, recibe acceso a nuestra inovadora forma de comprar.</p>
+                        <br>
+                        <input type="email" id="newMail" placeholder="Correo electrónico">
+                        <div class="wrong" style="color: crimson; font-size: 10px;" ></div>
+                        <br>
+                        <input type="password" id="newPassword" placeholder="Nueva contraseña">
+                        <div class="wrong" style="color: crimson; font-size: 10px;" ></div>
+                        <br>
+                        <input type="password" id="passwordConfirm" placeholder="Confirma tu contraseña">
+                        <div class="wrong" style="color: crimson; font-size: 10px;" ></div>
+                        <br>
+                        <div class="title">
+                            <div class="separadorH">
+                                <hr>
+                            </div>
+                            <div id="textHeaderIndex" style="width: 45%;">
+                                <p>Datos de Contacto</p>
+                            </div>
+                            <div class="separadorH">
+                                <hr>
+                            </div>
+                        </div>
+                        <input type="text" id="completeName" placeholder="Nombres">
+                        <div class="wrong" style="color: crimson; font-size: 10px;" ></div>
+                        <br>
+                        <input type="text" id="lastName" placeholder="Apellidos">
+                        <div class="wrong" style="color: crimson; font-size: 10px;" ></div>
+                        <br>
+                        <select name="idType" id="idType" style="width: 12%; margin-right: 5px; height: 26px; border-width: 2px; border-color: #70707036; color: #707070;">
+                            <option value="CC">CC</option>
+                            <option value="CE">CE</option>
+                            <option value="TI">TI</option>
+                        </select>
+                        <input type="number" style="width: 83%;" id="lastName" placeholder="Num. Documento">
+                        <div class="wrong" style="color: crimson; font-size: 10px;" ></div>
+                        <br>
+                        <select name="departament" id="departament" style="width: 99%; margin-right: 5px; height: 26px; border-width: 2px; border-color: #70707036; color: #707070;">
+                            <option value="Cundinamarca">Cundinamarca</option>
+                            <option value="Antioquia">Antioquia</option>
+                            <option value="Amazonas">Amazonas</option>
+                        </select>
+                        <br>
+                        <br>
+                        <select name="city" id="ciy" style="width: 99%; margin-right: 5px; height: 26px; border-width: 2px; border-color: #70707036; color: #707070;">
+                            <option value="Bogotá">Bogotá</option>
+                            <option value="Medellin">Medellin</option>
+                            <option value="Mitu">Mitu</option>
+                        </select>
+                        <br>
+                        <br>
+                        <input type="text" id="address" placeholder="Dirección">
+                        <div class="wrong" style="color: crimson; font-size: 10px;" ></div>
+                        <br>
+                        <input type="text" id="tel" placeholder="Teléfono">
+                        <div class="wrong" style="color: crimson; font-size: 10px;" ></div>
+                        <br>
+                        <div style="display:flex; text-align: left; justify-content: center; flex-direction: row;">
+                                <input type="radio" id="radio" name="radio" style="width: auto; height: auto; margin: 5px; float: left;">
+                                <label style="margin-bottom: -2px; margin-right: 2px;" for="radio"></label>
+                            <div style="font-size: 10px; width: 90%; height: 26px; float: left;">
+                                He leido y acepto los
+                                <a href="#" style="text-decoration: none; color: black; font-weight: bold;"> Terminos y condiciones </a>
+                                 y autorizo el manejo de mis datos personales bajo la 
+                                <a href="#" style="text-decoration: none; color: black; font-weight: bold;">Politica de tratamiento de datos </a>
+                            </div>
+
+                        </div>
+                        <br>
+                        <button onclick="obtenerValor()" >Registrarse</button>
+    
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+
+        <div id=footerContainer>
+            <div id="rights"> Copyright &copy;
+                <script> document.write(new Date().getFullYear());</script> Acua de Colombia S.A.S. Lane Todos los
+                Derechos
+                Reservados</div>
+            <div id="documents">
+                <a href="">Terminos y condiciones</a> <br>
+                <a href="">Politica de tratamiento de datos</a>
+            </div>
+        </div>
+
+        <!--Finish of index's footer-->
+
+    </div>
+    <!--Finish of index's content-->
+
+    <script src="Assents/js/main.js"></script>>
+    <script src="Assents/js/jquery-3.5.1.min.js"></script>
+</body>
+
+</html>
