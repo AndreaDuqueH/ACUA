@@ -7,9 +7,8 @@
     <title>Acua Colombia</title>
     <link rel="stylesheet" href="Assents/css/acuaStyle.css">
     <link rel="stylesheet" href="Assents/css/resetDocument.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Assents/img/favicon.ico" type="image/x-icon">
 
 </head>
 
@@ -44,15 +43,24 @@
         <div class="logo"><a href="index.html"><img src="Assents/img/Logo Acua fondo Transparente.png" alt="logo"></a> </div>
 
         <div class="linksMenu">
-            <div class="blockTextMenu">
-                <a href="">MUJERES</a> <br>
-            </div>
-            <div class="blockTextMenu">
-                <a href="">HOMBRES</a> <br>
-            </div>
-            <div class="blockTextMenu">
-                <a href="">ACCESORIOS</a> <br>
-            </div>
+
+			<div class="blockTextMenu">
+					<div class="control control--effects" onclick="window.location.href='gridMujeres.html'">
+						<button class="control__btn" data-fx="vida" > MUJERES </button>
+					</div>
+			</div>
+
+			<div class="blockTextMenu">
+					<div class="control control--effects">
+						<button class="control__btn" data-fx="vida" onclick="window.location.href="> HOMBRES </button>
+					</div>
+			</div>
+			
+			<div class="blockTextMenu">
+				<div class="control control--effects">
+					<button class="control__btn" data-fx="vida" onclick="window.location.href="> ACCESORIOS </button>
+				</div>
+			</div>
             <div class="blockTextMenu boutique">
                 <a href="boutiques.html">BOUTIQUES</a> <br>
             </div>
@@ -104,6 +112,7 @@
                     <img src="Assents/img/slider1.svg" alt="">
                 </section>
 
+                
                 <!-- Next and previous buttons -->
                 <a class="prev" onclick="plusSlides(-1)"><img src="Assents/img/left-arrow.svg" alt=""></a>
                 <a class="next" onclick="plusSlides(1)"><img src="Assents/img/right-arrow.svg" alt=""></a>
@@ -163,6 +172,11 @@
     <!--Finish of index's content-->
 
     <script src="Assents/js/main.js"></script>>
-</body>
+
+
+	<script src="Assents/js/imagesloaded.pkgd.min.js"></script>
+	<script src="Assents/js/masonry.pkgd.min.js"></script>
+	<script src="Assents/js/anime.min.js"></script>
+	<script src="Assents/js/grid.js"></script>
 
 </html>

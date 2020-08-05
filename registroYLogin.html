@@ -7,9 +7,8 @@
     <title>Acua Colombia</title>
     <link rel="stylesheet" href="Assents/css/acuaStyle.css">
     <link rel="stylesheet" href="Assents/css/resetDocument.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Assents/img/favicon.ico" type="image/x-icon">
 
 </head>
 
@@ -95,17 +94,15 @@
                     <br>
                     <div>Contraseña</div>
                     <br>
-                    <input type="password" class="password">
+                    <input type="password" id="password">
                     <div id="wrongPassword" style="color: crimson; font-size: 10px;"></div>
                     <br>
                     <a href="#" style="font-size: 10px;">Olvide mi contraseña</a>
                     <br>
-                    <button onclick="obtenerValor()" >Iniciar Sesion</button>
-
-
-
+                    <button onclick="obtenerValorLog()" >Iniciar Sesion</button>
                 </div>
             </div>
+
             <div id="registry">
                 <div class="title">
                     <div class="separadorH">
@@ -122,14 +119,14 @@
                     <div style="padding: 10px">
                         <p style="font-size: 12px;">Registrate, recibe acceso a nuestra inovadora forma de comprar.</p>
                         <br>
-                        <input type="email" id="newMail" placeholder="Correo electrónico">
-                        <div class="wrong" style="color: crimson; font-size: 10px;" ></div>
+                        <input type="email" id="newMail" placeholder="Correo electrónico*">
+                        <div id="wrong" style="color: crimson; font-size: 10px;" ></div>
                         <br>
-                        <input type="password" id="newPassword" placeholder="Nueva contraseña">
-                        <div class="wrong" style="color: crimson; font-size: 10px;" ></div>
+                        <input type="password" id="newPassword" placeholder="Nueva contraseña*">
+                        <div id="wrong2" style="color: crimson; font-size: 10px;" ></div>
                         <br>
-                        <input type="password" id="passwordConfirm" placeholder="Confirma tu contraseña">
-                        <div class="wrong" style="color: crimson; font-size: 10px;" ></div>
+                        <input type="password" id="passwordConfirm" placeholder="Confirma tu contraseña*">
+                        <div id="wrong3" style="color: crimson; font-size: 10px;" ></div>
                         <br>
                         <div class="title">
                             <div class="separadorH">
@@ -142,19 +139,19 @@
                                 <hr>
                             </div>
                         </div>
-                        <input type="text" id="completeName" placeholder="Nombres">
-                        <div class="wrong" style="color: crimson; font-size: 10px;" ></div>
+                        <input type="text" id="completeName" placeholder="Nombres*">
+                        <div id="wrong4" style="color: crimson; font-size: 10px;" ></div>
                         <br>
-                        <input type="text" id="lastName" placeholder="Apellidos">
-                        <div class="wrong" style="color: crimson; font-size: 10px;" ></div>
+                        <input type="text" id="lastName" placeholder="Apellidos*">
+                        <div id="wrong5" style="color: crimson; font-size: 10px;" ></div>
                         <br>
                         <select name="idType" id="idType" style="width: 12%; margin-right: 5px; height: 26px; border-width: 2px; border-color: #70707036; color: #707070;">
                             <option value="CC">CC</option>
                             <option value="CE">CE</option>
                             <option value="TI">TI</option>
                         </select>
-                        <input type="number" style="width: 83%;" id="lastName" placeholder="Num. Documento">
-                        <div class="wrong" style="color: crimson; font-size: 10px;" ></div>
+                        <input type="number" style="width: 83%;" id="id" placeholder="Num. Documento*">
+                        <div id="wrong6" style="color: crimson; font-size: 10px;" ></div>
                         <br>
                         <select name="departament" id="departament" style="width: 99%; margin-right: 5px; height: 26px; border-width: 2px; border-color: #70707036; color: #707070;">
                             <option value="Cundinamarca">Cundinamarca</option>
@@ -171,10 +168,10 @@
                         <br>
                         <br>
                         <input type="text" id="address" placeholder="Dirección">
-                        <div class="wrong" style="color: crimson; font-size: 10px;" ></div>
+                        <div id="wrong" style="color: crimson; font-size: 10px;" ></div>
                         <br>
                         <input type="text" id="tel" placeholder="Teléfono">
-                        <div class="wrong" style="color: crimson; font-size: 10px;" ></div>
+                        <div id="wrong" style="color: crimson; font-size: 10px;" ></div>
                         <br>
                         <div style="display:flex; text-align: left; justify-content: center; flex-direction: row;">
                                 <input type="radio" id="radio" name="radio" style="width: auto; height: auto; margin: 5px; float: left;">
@@ -188,7 +185,7 @@
 
                         </div>
                         <br>
-                        <button onclick="obtenerValor()" >Registrarse</button>
+                        <button onclick="obtenerValorReg()"> Registrarse </button>
     
                     </div>
                    
@@ -216,6 +213,12 @@
 
     <script src="Assents/js/main.js"></script>>
     <script src="Assents/js/jquery-3.5.1.min.js"></script>
+
+
+	<script src="Assents/js/imagesloaded.pkgd.min.js"></script>
+	<script src="Assents/js/masonry.pkgd.min.js"></script>
+	<script src="Assents/js/anime.min.js"></script>
+	<script src="Assents/js/grid.js"></script>
 </body>
 
 </html>

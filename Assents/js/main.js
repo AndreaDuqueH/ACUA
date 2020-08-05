@@ -68,14 +68,16 @@ function slides() {
 
 
 function initMap() {
-  const ubication = { lat: 4.702358,
-    lng: -74.041556 };
+  const ubication = {
+    lat: 4.702358,
+    lng: -74.041556
+  };
 
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 12,
     center: ubication
   });
-    const contentString =
+  const contentString =
     '<div id="content">' +
     '<div id="siteNotice">' +
     "</div>" +
@@ -128,3 +130,149 @@ coordinates = [
 ]
 
 inicial 4.625480, -74.075383*/
+
+//obtener datos
+
+function obtenerValorLog() {
+
+  //Con jQuery
+  const mail = $('#mail').val();
+  const password = $('#password').val()
+
+  //Si no existe mail (!xxxx)
+  if (!mail) {
+    //sin jQuery
+    //document.getElementById('errormail').innerHTML ='Por favor ingrese mail';
+
+    //Con jQuery imprimiendo texto en div
+    $('#wrongMail').html('Por favor ingrese su direccion e-mail')
+
+    //Añadiendo la clase desde CSS
+    $('#mail').addClass('wrong')
+    return false;
+
+  } else {
+    $('#mail').removeClass('wrong')
+    $('#wrongMail').html('')
+  }
+
+  //Si no existe clave (!xxxx)
+  if (!password) {
+    //sin jQuery
+    //document.getElementById('errorNombre').innerHTML ='Por favor ingrese nombre';
+
+    //Con jQuery imprimiendo texto en div
+    $('#wrongPassword').html('Por favor ingrese su clave')
+
+    //Añadiendo la clase desde CSS
+    $('#password').addClass('wrong')
+    return false;
+
+  } else {
+    $('#password').removeClass('wrong')
+    $('#wrongPassword').html('')
+  }
+
+  console.log(mail)
+  console.log(password)
+}
+
+
+function obtenerValorReg() {
+
+  //Con jQuery
+  const newMail = $('#newMail').val();
+  const newPassword = $('#newPassword').val()
+  const passwordConfirm = $('#passwordConfirm').val()
+  const passwordConfirm = $('#completeName').val()
+  const passwordConfirm = $('#lastName').val()
+  const passwordConfirm = $('#id').val()
+
+
+  //Si no existe mail (!xxxx)
+  if (!newMail) {
+    //Con jQuery imprimiendo texto en div
+    $('#wrong').html('Por favor ingrese su direccion e-mail')
+
+    //Añadiendo la clase desde CSS
+    $('#mail').addClass('wrong')
+    return false;
+
+  } else {
+    $('#mail').removeClass('wrong')
+    $('#wrong').html('')
+  }
+
+  //Si no existe nueva clave (!xxxx)
+  if (!newPassword) {
+    //Con jQuery imprimiendo texto en div
+    $('#wrong2').html('Por favor asigne una clave a su nueva cuenta')
+
+    //Añadiendo la clase desde CSS
+    $('#newPassword').addClass('wrong')
+    return false;
+
+  } else {
+    $('#newPassword').removeClass('wrong')
+    $('#wrong2').html('')
+  }
+  //Si no existe confirmacion de clave (!xxxx)
+  if (!passwordConfirm) {
+    //Con jQuery imprimiendo texto en div
+    $('#wrong3').html('Por favor confirme su contraseña')
+
+    //Añadiendo la clase desde CSS
+    $('#passwordConfirm').addClass('wrong')
+    return false;
+
+  } else {
+    $('#passwordConfirm').removeClass('wrong')
+    $('#wrong3').html('')
+  }
+  //Si no existe nombre (!xxxx)
+  if (!completeName) {
+    //Con jQuery imprimiendo texto en div
+    $('#wrong4').html('Por favor ingrese su nombre')
+
+    //Añadiendo la clase desde CSS
+    $('#completeName').addClass('wrong')
+    return false;
+
+  } else {
+    $('#completeName').removeClass('wrong')
+    $('#wrong4').html('')
+  }
+  //Si no existe nombre (!xxxx)
+  if (!lastName) {
+    //Con jQuery imprimiendo texto en div
+    $('#wrong5').html('Por favor ingrese su apellido')
+
+    //Añadiendo la clase desde CSS
+    $('#lastName').addClass('wrong')
+    return false;
+
+  } else {
+    $('#lastName').removeClass('wrong')
+    $('#wrong5').html('')
+  }
+  //Si no existe nombre (!xxxx)
+  if (!id) {
+    //Con jQuery imprimiendo texto en div
+    $('#wrong6').html('Por favor ingrese su numero de identificación')
+
+    //Añadiendo la clase desde CSS
+    $('#id').addClass('wrong')
+    return false;
+
+  } else {
+    $('#id').removeClass('wrong')
+    $('#wrong6').html('')
+  }
+
+  console.log(newMail)
+  console.log(newPassword)
+  console.log(passwordConfirm)
+  console.log(completeName)
+  console.log(LastName)
+  console.log(id)
+}

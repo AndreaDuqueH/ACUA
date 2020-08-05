@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html lang="en"class="no-js">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+	<meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acua Colombia</title>
-    <link rel="stylesheet" href="Assents/css/acuaStyle.css">
-    <link rel="stylesheet" href="Assents/css/resetDocument.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="Assents/css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="Assents/css/gridStyles.css"/>
-    <link rel="stylesheet" type="text/css" href="Assents/sponsor/pater.css" />
-    
+	<link rel="stylesheet" type="text/css" href="Assents/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="Assents/css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="sponsor/pater.css" />
+	<link rel="stylesheet" href="Assents/css/acuaStyle.css">
+	<script>document.documentElement.className = 'js';</script>
+    <link rel="shortcut icon" href="Assents/img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
 
 </head>
 
@@ -22,7 +21,11 @@
     <div id="headerContainer">
         <div id="pin"><img src="Assents/img/location-pin.svg" alt="locationPin"></div>
         <div id="country">Colombia</div>
-        <div id="language">Español</div>
+        <div id="language">
+            <Select>
+                <option value="Español" selected="selected">Español</option>
+            </Select>
+        </div>
         <div id="pin"><img src="Assents/img/down-arrow.svg" alt="selectLanguage"></div>
         <div id="deliveryPromo"><b>Envios gratuitos por compras superiores a USD $30</b></div>
         <div id="browser">
@@ -31,32 +34,43 @@
                 <button class="searchButton" type="submit"><img src="Assents/img/search.svg" alt="loupe"></button>
             </form>
         </div>
-        <div id="ownAccount">Ingresar/Registrarse</div>
-        <div id="store">Bolsa</div>
-        <div id="bag"><img src="Assents/img/bag.svg" alt="bagStore"></div>
+        <div id="ownAccount"><a href="registroYLogin.html">Ingresar/Registrarse</a> </div>
+        <div id="store"><a href="">Bolsa</a> </div>
+        <div id="bag"><a href=""> <img src="Assents/img/bag.svg" alt="bagStore"></a> </div>
     </div>
     <!--Finish of header-->
 
-    <!--Begining of Menu-->
 
-    <div id="mainMenu">
+	<!--Begining of Menu-->
 
-        <div class="logo"><img src="Assents/img/Logo Acua fondo Transparente.png" alt="logo"></div>
+	<div id="mainMenu">
 
-        <div class="linksMenu">
-            <div class="blockTextMenu">
-                <a href="">MUJERES</a> <br>
-            </div>
-            <div class="blockTextMenu">
-                <a href="">HOMBRES</a> <br>
-            </div>
-            <div class="blockTextMenu">
-                <a href="">ACCESORIOS</a> <br>
-            </div>
+        <div class="logo"><a href="index.html"><img src="Assents/img/Logo Acua fondo Transparente.png" alt="logo"></a> </div>
+
+		<div class="linksMenu" >
+
+			<div class="blockTextMenu">
+					<div class="control control--effects">
+						<button class="control__btn" data-fx="vida" onclick="window.location.href="> MUJERES </button>
+					</div>
+			</div>
+
+			<div class="blockTextMenu">
+					<div class="control control--effects">
+						<button class="control__btn" data-fx="vida" onclick="window.location.href="> HOMBRES </button>
+					</div>
+			</div>
+			
+			<div class="blockTextMenu">
+				<div class="control control--effects">
+					<button class="control__btn" data-fx="vida" onclick="window.location.href="> ACCESORIOS </button>
+				</div>
+			</div>
+
             <div class="blockTextMenu boutique">
-                <a href="">BOUTIQUES</a> <br>
+                <a href="boutiques.html">BOUTIQUES</a> <br>
             </div>
-        </div>
+		</div>
 
         <div class="socialMedia">
             <div class="socialLogo"> <a href="http://www.facebook.com" target="_blank"><img
@@ -69,32 +83,26 @@
     </div>
     <!--Finish of Menu-->
 
-    <!--Begining of index's content-->
-    <div id="indexContent">
-        <!--Header-->
-        <div id="headerIndex">
-            <div id=containerHeaderIndex>
-                <div class="separadorH">
-                    <hr>
-                </div>
-                <div id="textHeaderIndex">
-                    <p>MUJERES - AROMAS 2020</p>
-                </div>
-                <div class="separadorH">
-                    <hr>
-                </div>
-            </div>
-        </div>
-
-
-        <!--Grid-->
-        <main>
-        
-			<div class="content content--side content--right">
-				<div class="control control--effects">
-					<button class="control__btn" data-fx="vida">Shu</button>
+	<!--Begining of index's content-->
+	<div id="indexContent">
+		<!--Header-->
+		<div id="headerIndex">
+			<div id=containerHeaderIndex>
+				<div class="separadorH">
+					<hr>
+				</div>
+				<div id="textHeaderIndex">
+					<p>AROMAS FEMENINOS</p>
+				</div>
+				<div class="separadorH">
+					<hr>
 				</div>
 			</div>
+		</div>
+
+		<!--Grid-->
+
+		<div id="mainBlock">
 			<div class="content content--center">
 				<div class="grid grid--type-a">
 					<div class="grid__sizer"></div>
@@ -103,16 +111,6 @@
 					</div>
 					<div class="grid__item">
 						<a class="grid__link" href="#"><img class="grid__img" src="Assents/img/Woman/2.jpg" alt="Some image" /></a>
-					</div>
-					<div class="grid__item">
-						<a class="grid__link pater" href="http://synd.co/2oQTgFH">
-							<div class="pater__img"></div>
-							<div class="pater__content">
-								<h2 class="pater__title" aria-label="fullstory">See Every Click, Swipe, <br> and Scroll</h2>
-								<p class="pater__desc">See how users experience your designs with FullStory.</p>
-								<span class="pater__call">Get it free today!</span>
-							</div>
-						</a>
 					</div>
 					<div class="grid__item">
 						<a class="grid__link" href="#"><img class="grid__img" src="Assents/img/Woman/3.jpg" alt="Some image" /></a>
@@ -158,31 +156,32 @@
 					</div>
 				</div>
 			</div>
-        </main>
+
+		</div>
+		<!--Finish Grid-->
+
+		<!--Footer-->
+
+		<div id=footerContainer>
+			<div id="rights"> Copyright &copy;
+				<script> document.write(new Date().getFullYear());</script> Acua de Colombia S.A.S. Lane Todos los
+				Derechos
+				Reservados</div>
+			<div id="documents">
+				<a href="">Terminos y condiciones</a> <br>
+				<a href="">Politica de tratamiento de datos</a>
+			</div>
+		</div>
+
+		<!--Finish of index's footer-->
+
+	</div>
 
 
-        <!--Footer-->
-
-        <div id=footerContainer>
-            <div id="rights"> Copyright &copy;
-                <script> document.write(new Date().getFullYear());</script> Acua de Colombia S.A.S. Lane Todos los
-                Derechos
-                Reservados</div>
-            <div id="documents">
-                <a href="">Terminos y condiciones</a> <br>
-                <a href="">Politica de tratamiento de datos</a>
-            </div>
-        </div>
-
-        <!--Finish of index's footer-->
-
-    </div>
-    <!--Finish of index's content-->
-
-    <script src="Assents/js/main.js"></script>
-    <script src="Assents/js/imagesloaded.pkgd.min.js"></script>
-    <script src="Assents/js/masonry.pkgd.min.js"></script>
-    <script src="Assents/js/anime.min.js"></script>
+	<script src="Assents/js/imagesloaded.pkgd.min.js"></script>
+	<script src="Assents/js/masonry.pkgd.min.js"></script>
+	<script src="Assents/js/anime.min.js"></script>
+	<script src="Assents/js/grid.js"></script>
 </body>
 
 </html>

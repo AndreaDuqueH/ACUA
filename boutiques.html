@@ -7,14 +7,15 @@
     <title>Acua Colombia</title>
     <link rel="stylesheet" href="Assents/css/acuaStyle.css">
     <link rel="stylesheet" href="Assents/css/resetDocument.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Assents/img/favicon.ico" type="image/x-icon">
+        
 
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAY7zF9DCLC2PaqyZ4XEhqUgcYFm8-rcMA&callback=initMap&libraries=&v=weekly"
         defer></script>
+
 
 </head>
 
@@ -52,15 +53,24 @@
         <div class="logo"><a href="index.html"><img src="Assents/img/Logo Acua fondo Transparente.png" alt="logo"></a> </div>
 
         <div class="linksMenu">
-            <div class="blockTextMenu">
-                <a href="">MUJERES</a> <br>
-            </div>
-            <div class="blockTextMenu">
-                <a href="">HOMBRES</a> <br>
-            </div>
-            <div class="blockTextMenu">
-                <a href="">ACCESORIOS</a> <br>
-            </div>
+
+			<div class="blockTextMenu">
+					<div class="control control--effects" onclick="window.location.href='gridMujeres.html'">
+						<button class="control__btn" data-fx="vida" > MUJERES </button>
+					</div>
+			</div>
+
+			<div class="blockTextMenu">
+					<div class="control control--effects">
+						<button class="control__btn" data-fx="vida" onclick="window.location.href="> HOMBRES </button>
+					</div>
+			</div>
+			
+			<div class="blockTextMenu">
+				<div class="control control--effects">
+					<button class="control__btn" data-fx="vida" onclick="window.location.href="> ACCESORIOS </button>
+				</div>
+			</div>
             <div class="blockTextMenu boutique">
                 <a href="boutiques.html">BOUTIQUES</a> <br>
             </div>
@@ -95,8 +105,8 @@
         </div>
 
         <!--Main Content-->
-        <div id="mainContent">
-            <div id="map"> </div>
+        <div id="mainContent" style="margin-bottom: 10px;">
+            <div id="map" > </div>
 
 
             <div id="boutiques">
@@ -143,6 +153,12 @@
     <!--Finish of index's content-->
 
     <script src="Assents/js/main.js"></script>
+
+
+	<script src="Assents/js/imagesloaded.pkgd.min.js"></script>
+	<script src="Assents/js/masonry.pkgd.min.js"></script>
+	<script src="Assents/js/anime.min.js"></script>
+	<script src="Assents/js/grid.js"></script>
 </body>
 
 </html>
