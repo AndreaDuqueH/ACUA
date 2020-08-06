@@ -12,6 +12,12 @@ body {
     font-size: 14px;
   }
 
+  #hamburguer {
+    width: 60px;
+    height: 60px;
+
+  }
+
   #country {
     position: relative;
     float: left;
@@ -144,6 +150,10 @@ body {
     color: #707070;
   }
 
+  #ownAccount a:hover{
+    color: #0cbdd2
+  }
+
   #store {
     position: relative;
     float: left;
@@ -164,15 +174,25 @@ body {
     color: #707070;
   }
 
+  #store a:hover {
+    color: #0cbdd2
+  }
+
   #bag {
     position: relative;
     float: left;
+    width: ;
     height: 40px;
     display: flex;
     justify-content: center;
     text-align: center;
     flex-direction: column;
     margin-bottom: 5px;
+  }
+
+  #bag a img:hover {
+    border: #0cbdd2 2px solid;
+    border-radius: 5px;
   }
 /*Finish Header's Styles*/
 
@@ -245,11 +265,14 @@ body {
     outline: inherit;
   }
   
-
   .control--effects {
     color: #707070;
     text-align: left;
     font-weight: bold;
+  }
+
+  .control--effects:hover {
+    color: #0cbdd2;
   }
   
   .blockTextMenu a {
@@ -258,6 +281,11 @@ body {
     text-align: left;
     font-weight: bold;
   }
+
+  .blockTextMenu a:hover {
+    color: #0cbdd2;
+  }
+  
 
   .socialMedia {
     height: 10%;
@@ -277,6 +305,13 @@ body {
     text-align: center;
     flex-direction: column;
    }
+
+   .socialIcon:hover {
+    border: #0cbdd2 2px solid;
+    border-radius: 15px;
+    
+  }
+   
 
 /*Finish Menu Styles*/
 
@@ -349,26 +384,26 @@ body {
   /*index´s slider styles*/
 
   .mainSlider {
-    width: auto;
+    width: 100%;
     height: 352px;
     overflow: hidden;
   }
   .sliderContainer {
     position: relative;
     width: 100%;
+    height: 100%;
     display: flex;
   }
-
-  .background {
-    width: 100%;
+  .sliderContainer img {
+    width: 1052px;
+    height: 351px;
   }
-
   /* Next & previous buttons */
 
   .prev, .next {
   cursor: progress;
   position: absolute;
-  top: 50%;
+  top: 30%;
   width: auto;
   margin-top: -22px;
   padding: 10px;
@@ -422,6 +457,10 @@ body {
     width: 30%; 
     margin: 0px 15px;
     border-radius: 5px;
+  }
+
+  .mainSection:hover {
+    border: #4d4b4b solid 2px;
   }
 
   .mainSection img {
@@ -479,6 +518,10 @@ body {
     color: #707070;
     text-align: left;
     font-weight: bold;
+  }
+
+  #documents a:hover{
+    color: #0cbdd2
   }
 
 /*                            Boutique's Styles                             */
@@ -598,3 +641,112 @@ body {
 .wrong {
   border: 1px solid red;
 }
+
+
+/* Cellphone Responsive*/
+
+@media screen and (max-width:500px) {
+  #headerContainer {
+    width: auto;
+  }
+  #pin, #country, #language, #deliveryPromo, #browser{
+    display: none;
+  }
+  #hamburguer {
+    float: left;
+    width: 30px;
+    height: 45px; 
+    display: flex;
+    justify-content: center ;
+    text-align: center;
+    padding : 6px;
+
+  }
+  #hamburguer img{
+    width: 30px;
+    height: 30px;
+  }
+  
+  #ownAccount{
+    padding-left: 135px;
+  }
+  #bag {
+    float: right;
+    padding-right: 10px;
+  }
+  #store {
+    display: none;
+  }
+  #mainMenu {
+    display: none;
+  }
+  #indexContent {
+    width: 100%;
+    height: auto;
+    padding: unset;
+  }
+  #logoCell { 
+    display: flex;
+    justify-content: center ;
+    text-align: center;
+    margin: 20px 0px;
+  }
+  #headerIndex {
+    padding: unset;
+  }
+  #textHeaderIndex {
+    width: 45%;
+  }
+  .mainSlider {
+    width: 100%;
+    height: 200px;
+  }
+  .sliderContainer {
+    width: 100%;
+    height: 100%;
+  }
+  .sliderContainer img {
+    width: 500px;
+    height: 200px;
+  }
+  .prev, .next, .controls {
+    display: none;
+  }
+  .lowerControl {
+    width: 35px;
+  }
+  #sectionsIndex {
+    width: 100%;
+    height: auto;
+    padding: unset;
+  }
+  .mainSection {
+    float: none;
+    margin: 10px;
+    width: 93%;
+    height: 175px;
+  }
+  
+  .mainSection img {
+    width: 100%;
+    height: 100%;
+  }
+  #rights, #documents {
+    font-size: 8px;
+  }
+
+}
+
+@media screen and (min-width:500px) {
+  #hamburguer {
+    display: none;
+  }
+  #logoCell {
+    display: none;
+  }
+  .prev, .next, .controls {
+    display: none;
+  }
+}
+
+

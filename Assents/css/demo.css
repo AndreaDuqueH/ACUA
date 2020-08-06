@@ -43,9 +43,13 @@ body {
 
 .grid__img {
 	width: 100%;
-	border-radius: 10px;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.grid__img:hover {
+	opacity: 40%;
+}
 .grid__deco {
 	position: absolute;
 	top: 0;
@@ -56,7 +60,7 @@ body {
 /*lines*/
 .grid__deco path {
 	fill: none;
-	stroke: #707070;
+	stroke: #70707036;
 	stroke-width: 3px;
 }
 

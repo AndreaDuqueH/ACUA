@@ -7,7 +7,9 @@
     <title>Acua Colombia</title>
     <link rel="stylesheet" href="Assents/css/acuaStyle.css">
     <link rel="stylesheet" href="Assents/css/resetDocument.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="shortcut icon" href="Assents/img/favicon.ico" type="image/x-icon">
 
 </head>
@@ -44,26 +46,35 @@
         </div>
 
         <div class="linksMenu">
-            <div class="blockTextMenu">
-                <a href="">MUJERES</a> <br>
-            </div>
-            <div class="blockTextMenu">
-                <a href="">HOMBRES</a> <br>
-            </div>
-            <div class="blockTextMenu">
-                <a href="">ACCESORIOS</a> <br>
-            </div>
+
+			<div class="blockTextMenu">
+					<div class="control control--effects" onclick="window.location.href='gridMujeres.html'">
+						<button class="control__btn" data-fx="vida" > MUJERES </button>
+					</div>
+			</div>
+
+			<div class="blockTextMenu">
+					<div class="control control--effects">
+						<button class="control__btn" data-fx="vida" onclick="window.location.href='gridHombres.html'"> HOMBRES </button>
+					</div>
+			</div>
+			
+			<div class="blockTextMenu">
+				<div class="control control--effects">
+					<button class="control__btn" data-fx="vida" onclick="window.location.href='gridAccesorios.html'"> ACCESORIOS </button>
+				</div>
+			</div>
             <div class="blockTextMenu boutique">
                 <a href="boutiques.html">BOUTIQUES</a> <br>
             </div>
         </div>
 
         <div class="socialMedia">
-            <div class="socialLogo"> <a href="http://www.facebook.com" target="_blank"><img
+            <div class="socialLogo"> <a href="http://www.facebook.com" target="_blank" ><img class="socialIcon"
                         src="Assents/img/facebook-circular-logo.svg" alt="facebook"></a></div>
-            <div class="socialLogo"><a href="http://twitter.com" target="_blank"><img src="Assents/img/twitter.svg"
+            <div class="socialLogo"><a href="http://twitter.com" target="_blank"><img class="socialIcon" src="Assents/img/twitter.svg"
                         alt="twitter"></a></div>
-            <div class="socialLogo"> <a href="http://instagram.com" target="_blank"><img src="Assents/img/instagram.svg"
+            <div class="socialLogo"> <a href="http://instagram.com" target="_blank"><img class="socialIcon" src="Assents/img/instagram.svg"
                         alt="instagram"></a></div>
         </div>
     </div>
@@ -99,7 +110,7 @@
                     <br>
                     <a href="#" style="font-size: 10px;">Olvide mi contraseña</a>
                     <br>
-                    <button onclick="obtenerValorLog()" >Iniciar Sesion</button>
+                    <button onclick="obtenerValorLog()">Iniciar Sesion</button>
                 </div>
             </div>
 
@@ -120,13 +131,13 @@
                         <p style="font-size: 12px;">Registrate, recibe acceso a nuestra inovadora forma de comprar.</p>
                         <br>
                         <input type="email" id="newMail" placeholder="Correo electrónico*">
-                        <div id="wrong" style="color: crimson; font-size: 10px;" ></div>
+                        <div id="wrong" style="color: crimson; font-size: 10px;"></div>
                         <br>
                         <input type="password" id="newPassword" placeholder="Nueva contraseña*">
-                        <div id="wrong2" style="color: crimson; font-size: 10px;" ></div>
+                        <div id="wrong2" style="color: crimson; font-size: 10px;"></div>
                         <br>
                         <input type="password" id="passwordConfirm" placeholder="Confirma tu contraseña*">
-                        <div id="wrong3" style="color: crimson; font-size: 10px;" ></div>
+                        <div id="wrong3" style="color: crimson; font-size: 10px;"></div>
                         <br>
                         <div class="title">
                             <div class="separadorH">
@@ -140,27 +151,30 @@
                             </div>
                         </div>
                         <input type="text" id="completeName" placeholder="Nombres*">
-                        <div id="wrong4" style="color: crimson; font-size: 10px;" ></div>
+                        <div id="wrong4" style="color: crimson; font-size: 10px;"></div>
                         <br>
                         <input type="text" id="lastName" placeholder="Apellidos*">
-                        <div id="wrong5" style="color: crimson; font-size: 10px;" ></div>
+                        <div id="wrong5" style="color: crimson; font-size: 10px;"></div>
                         <br>
-                        <select name="idType" id="idType" style="width: 12%; margin-right: 5px; height: 26px; border-width: 2px; border-color: #70707036; color: #707070;">
+                        <select name="idType" id="idType"
+                            style="width: 12%; margin-right: 5px; height: 26px; border-width: 2px; border-color: #70707036; color: #707070;">
                             <option value="CC">CC</option>
                             <option value="CE">CE</option>
                             <option value="TI">TI</option>
                         </select>
                         <input type="number" style="width: 83%;" id="id" placeholder="Num. Documento*">
-                        <div id="wrong6" style="color: crimson; font-size: 10px;" ></div>
+                        <div id="wrong6" style="color: crimson; font-size: 10px;"></div>
                         <br>
-                        <select name="departament" id="departament" style="width: 99%; margin-right: 5px; height: 26px; border-width: 2px; border-color: #70707036; color: #707070;">
+                        <select name="departament" id="departament"
+                            style="width: 99%; margin-right: 5px; height: 26px; border-width: 2px; border-color: #70707036; color: #707070;">
                             <option value="Cundinamarca">Cundinamarca</option>
                             <option value="Antioquia">Antioquia</option>
                             <option value="Amazonas">Amazonas</option>
                         </select>
                         <br>
                         <br>
-                        <select name="city" id="ciy" style="width: 99%; margin-right: 5px; height: 26px; border-width: 2px; border-color: #70707036; color: #707070;">
+                        <select name="city" id="ciy"
+                            style="width: 99%; margin-right: 5px; height: 26px; border-width: 2px; border-color: #70707036; color: #707070;">
                             <option value="Bogotá">Bogotá</option>
                             <option value="Medellin">Medellin</option>
                             <option value="Mitu">Mitu</option>
@@ -168,27 +182,30 @@
                         <br>
                         <br>
                         <input type="text" id="address" placeholder="Dirección">
-                        <div id="wrong" style="color: crimson; font-size: 10px;" ></div>
+                        <div id="wrong" style="color: crimson; font-size: 10px;"></div>
                         <br>
                         <input type="text" id="tel" placeholder="Teléfono">
-                        <div id="wrong" style="color: crimson; font-size: 10px;" ></div>
+                        <div id="wrong" style="color: crimson; font-size: 10px;"></div>
                         <br>
                         <div style="display:flex; text-align: left; justify-content: center; flex-direction: row;">
-                                <input type="radio" id="radio" name="radio" style="width: auto; height: auto; margin: 5px; float: left;">
-                                <label style="margin-bottom: -2px; margin-right: 2px;" for="radio"></label>
+                            <input type="radio" id="radio" name="radio"
+                                style="width: auto; height: auto; margin: 5px; float: left;">
+                            <label style="margin-bottom: -2px; margin-right: 2px;" for="radio"></label>
                             <div style="font-size: 10px; width: 90%; height: 26px; float: left;">
                                 He leido y acepto los
-                                <a href="#" style="text-decoration: none; color: black; font-weight: bold;"> Terminos y condiciones </a>
-                                 y autorizo el manejo de mis datos personales bajo la 
-                                <a href="#" style="text-decoration: none; color: black; font-weight: bold;">Politica de tratamiento de datos </a>
+                                <a href="#" style="text-decoration: none; color: black; font-weight: bold;"> Terminos y
+                                    condiciones </a>
+                                y autorizo el manejo de mis datos personales bajo la
+                                <a href="#" style="text-decoration: none; color: black; font-weight: bold;">Politica de
+                                    tratamiento de datos </a>
                             </div>
 
                         </div>
                         <br>
-                        <button onclick="obtenerValorReg()"> Registrarse </button>
-    
+                        <button onclick="registryWrong()">Registrarse</button>
+
                     </div>
-                   
+
                 </div>
             </div>
         </div>
@@ -209,16 +226,168 @@
         <!--Finish of index's footer-->
 
     </div>
+
+    <script>
+
+
+        function obtenerValorLog() {
+
+            //Con jQuery
+            const mail = $('#mail').val();
+            const password = $('#password').val()
+
+            //Si no existe mail (!xxxx)
+            if (!mail) {
+                //sin jQuery
+                //document.getElementById('errormail').innerHTML ='Por favor ingrese mail';
+
+                //Con jQuery imprimiendo texto en div
+                $('#wrongMail').html('Por favor ingrese su direccion e-mail')
+
+                //Añadiendo la clase desde CSS
+                $('#mail').addClass('wrong')
+                return false;
+
+            } else {
+                $('#mail').removeClass('wrong')
+                $('#wrongMail').html('')
+            }
+
+            //Si no existe clave (!xxxx)
+            if (!password) {
+                //sin jQuery
+                //document.getElementById('errorNombre').innerHTML ='Por favor ingrese nombre';
+
+                //Con jQuery imprimiendo texto en div
+                $('#wrongPassword').html('Por favor ingrese su clave')
+
+                //Añadiendo la clase desde CSS
+                $('#password').addClass('wrong')
+                return false;
+
+            } else {
+                $('#password').removeClass('wrong')
+                $('#wrongPassword').html('')
+            }
+
+            console.log(mail)
+            console.log(password)
+        }
+
+
+    </script>
+
+    <script>
+
+        function registryWrong() {
+
+            //Con jQuery
+            const newMail = $('#newMail').val();
+            const newPassword = $('#newPassword').val()
+            const passwordConfirm = $('#passwordConfirm').val()
+            const passwordConfirm = $('#completeName').val()
+            const passwordConfirm = $('#lastName').val()
+            const passwordConfirm = $('#id').val()
+
+
+            //Si no existe mail (!xxxx)
+            if (!newMail) {
+                //Con jQuery imprimiendo texto en div
+                $('#wrong').html('Por favor ingrese su direccion e-mail')
+
+                //Añadiendo la clase desde CSS
+                $('#mail').addClass('wrong')
+                return false;
+
+            } else {
+                $('#mail').removeClass('wrong')
+                $('#wrong').html('')
+            }
+
+            //Si no existe nueva clave (!xxxx)
+            if (!newPassword) {
+                //Con jQuery imprimiendo texto en div
+                $('#wrong2').html('Por favor asigne una clave a su nueva cuenta')
+
+                //Añadiendo la clase desde CSS
+                $('#newPassword').addClass('wrong')
+                return false;
+
+            } else {
+                $('#newPassword').removeClass('wrong')
+                $('#wrong2').html('')
+            }
+            //Si no existe confirmacion de clave (!xxxx)
+            if (!passwordConfirm) {
+                //Con jQuery imprimiendo texto en div
+                $('#wrong3').html('Por favor confirme su contraseña')
+
+                //Añadiendo la clase desde CSS
+                $('#passwordConfirm').addClass('wrong')
+                return false;
+
+            } else {
+                $('#passwordConfirm').removeClass('wrong')
+                $('#wrong3').html('')
+            }
+            //Si no existe nombre (!xxxx)
+            if (!completeName) {
+                //Con jQuery imprimiendo texto en div
+                $('#wrong4').html('Por favor ingrese su nombre')
+
+                //Añadiendo la clase desde CSS
+                $('#completeName').addClass('wrong')
+                return false;
+
+            } else {
+                $('#completeName').removeClass('wrong')
+                $('#wrong4').html('')
+            }
+            //Si no existe nombre (!xxxx)
+            if (!lastName) {
+                //Con jQuery imprimiendo texto en div
+                $('#wrong5').html('Por favor ingrese su apellido')
+
+                //Añadiendo la clase desde CSS
+                $('#lastName').addClass('wrong')
+                return false;
+
+            } else {
+                $('#lastName').removeClass('wrong')
+                $('#wrong5').html('')
+            }
+            //Si no existe nombre (!xxxx)
+            if (!id) {
+                //Con jQuery imprimiendo texto en div
+                $('#wrong6').html('Por favor ingrese su numero de identificación')
+
+                //Añadiendo la clase desde CSS
+                $('#id').addClass('wrong')
+                return false;
+
+            } else {
+                $('#id').removeClass('wrong')
+                $('#wrong6').html('')
+            }
+
+            console.log(newMail)
+            console.log(newPassword)
+            console.log(passwordConfirm)
+            console.log(completeName)
+            console.log(LastName)
+            console.log(id)
+        }
+    </script>
     <!--Finish of index's content-->
 
     <script src="Assents/js/main.js"></script>>
     <script src="Assents/js/jquery-3.5.1.min.js"></script>
 
 
-	<script src="Assents/js/imagesloaded.pkgd.min.js"></script>
-	<script src="Assents/js/masonry.pkgd.min.js"></script>
-	<script src="Assents/js/anime.min.js"></script>
-	<script src="Assents/js/grid.js"></script>
+    <script src="Assents/js/imagesloaded.pkgd.min.js"></script>
+    <script src="Assents/js/masonry.pkgd.min.js"></script>
+    <script src="Assents/js/anime.min.js"></script>
+    <script src="Assents/js/grid.js"></script>
 </body>
 
 </html>
